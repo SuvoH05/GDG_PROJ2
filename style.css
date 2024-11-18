@@ -123,9 +123,49 @@ nav button{
 }
 
 .first{
+    position: relative;
     height: 55%;
+    justify-content: end;
     vertical-align:bottom;
 }
+.slider{
+    display: flex;
+    justify-content: space-around;
+    gap: 19px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 190px;
+    height: 90px;
+    position: absolute;
+    top: 40%;
+    right: 7%;
+}
+.slider img{
+    margin-left: 19px;
+    width: 50px;
+    height: 50px;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: black;
+    border-radius: 100px;
+    
+
+}
+.innercircle{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    
+}
+
+
 .maintext{
     font-family: 'Polin3';
     margin-left: 40px;
