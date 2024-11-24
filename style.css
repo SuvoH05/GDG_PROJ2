@@ -30,23 +30,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: default;
 }
 body{
     background-color: rgba(250, 235, 215, 0.137);
+    height: 1150px;
+    /* overflow: hidden; */
 }
-
+::-webkit-scrollbar{
+    display: none;
+}
 nav{
     /* background-color: beige; */
     max-width: 1750px ;
     margin: 0 auto;
     height: 65px;
     margin-top: 25px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 ul{
     list-style-type: none;
     margin: 0px 10px 0px 10px;
+    cursor: default;
 }
 li{
     display: inline;
@@ -58,8 +64,14 @@ li a{
     color: black;
     font-family: 'Polin4';
     font-size: 14px;
+    transition: ease-out 0.15s;
+    cursor:default;
 }
-
+li a:hover{
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(230, 103, 0);
+}
 h1 p{
     margin-left: 20px;
     font-size: 30px;
@@ -72,13 +84,30 @@ nav button{
 .container{
     display: flex;
     justify-content: flex-start;
-    border: 1px solid rebeccapurple;
+    /* border: 1px solid rebeccapurple; */
     width:93%;
     margin: 0 auto;
     height: 51.3rem;
     position: relative;
 
 }
+
+#stars{
+    position: absolute;
+}
+.s1{
+    width: 45px ;
+    height: 45px;
+    top: 10%;
+    right: 40%;
+}
+.s2{
+    width: 30px ;
+    height: 30px;
+    bottom: 34%;
+    right: 60%;
+}
+
 .arrowimg{
     position: absolute;
     left: 35%;
@@ -153,7 +182,9 @@ nav button{
     align-items: center;
     width: 75px;
     height: 75px;
-    background-color: black;
+    background-image: url(birds.jpg);
+    background-position: center;
+    background-size: contain;
     border-radius: 100px;
     
 
@@ -183,7 +214,9 @@ nav button{
 }
 .elem2{
     margin-right: 30px;
-    background-color: rgb(145, 105, 54);
+    background-image: url(handshake.jpg);
+    background-position: center;
+    background-size:contain;
     height: 13.5vh;
     width: 10vh;
     border-radius: 100px;
@@ -212,10 +245,14 @@ nav button{
     
 }
 .elem3{
-    width: 24vw ;
+    min-width: 24vw ;
+    max-width: 24vw ;
     height: 70vh ;
     margin-bottom: 50px;
-    background-color: rgb(145, 105, 54);
+    background-image: url(hand3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 135%;
     border-radius: 300px;
 }
 .elem4{
@@ -274,6 +311,68 @@ nav button{
     border-radius: 40px;
     width: 130px;
     height: 48px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    transition-delay: ease-in 0.3s;
+    cursor: default;
+}
+.btn a:hover{
+    text-decoration: underline;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(250, 232, 206);
+    height: 262px;
+    overflow: hidden;
+}
+
+.l1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:aqua; */
+    width: 400px;
+    height: 200px;
+}
+hr{
+    border: 3px solid black;
+}
+.ltext1{
+    font-family: 'Polin3';
+    font-size: 1.9em;
+    line-height: 41px;
+    
+}
+
+.l2{
+    background-image: url(human.jpg);
+    background-position: center;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    width: 370px;
+    height: 200px;
+}
+
+.l3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color:aqua; */
+    width: 400px;
+    height: 200px;
+}
+.ltext2{
+    font-family: 'Polin1';
+    font-size: 1em;
+    line-height: 30px;
+    
 }
 
 
