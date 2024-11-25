@@ -81,6 +81,9 @@ h1 p{
 nav button{
     margin-right: 20px;
 }
+
+
+
 .container{
     display: flex;
     justify-content: flex-start;
@@ -327,8 +330,9 @@ nav button{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(250, 232, 206);
-    height: 262px;
+    background-color: #fae8ce;
+    background-image: url(lines_foot.png);
+    height: 262px ;
     overflow: hidden;
 }
 
